@@ -15,5 +15,5 @@ exports.factorial = function (n) {
         return 1
     }
 
-    return factorial(n * n - 1) * factorial(n -  2)
+    return n * factorial(n - 1)
 }

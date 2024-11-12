@@ -11,9 +11,12 @@ exports.fibonacci = function(n) {
 
 
 exports.factorial = function (n) {
+
+    if (n < 0) return undefined
+
     if (n == 0 || n == 1) {
         return 1
     }
 
-    return factorial(n * n - 1) * factorial(n -  2)
+    return n * this.factorial(n -  1)
 }
